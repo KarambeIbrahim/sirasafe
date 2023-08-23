@@ -1,0 +1,130 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #205375 -0%, rgba(19, 18, 18, 0.2099999934) 100%);    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    form{
+        //background-color: rgba(1, 12, 20, 0.62);
+        max-width: 400px;
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            color: #232836;
+            text-align: center;
+            
+        }
+        img{
+            display: block;
+            margin:auto;
+            width: 150px;
+            height: 150px;
+        }
+        .formInput{
+            position: relative;
+            
+        }
+        .eyeIcon{
+            position: absolute;
+            top: 5px;
+            right: 0;
+            font-size: 18px !important;
+            padding: 5px;
+            color: #232836;
+            cursor: pointer;
+        }
+        
+        button{
+            height: 50px;
+            width: 100%;
+            background-color: rgba(32, 83, 117, 0.6200000048);
+            color: white;
+            padding: 10px;
+            border: 1px solid rgba(32, 83, 117, 0.6200000048);
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 15px 0 10px 0;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #1f2224;
+            }
+        }
+
+        .formLink{
+            text-align: center;
+        }
+        .line{
+            position: relative;
+            height: 1px;
+            width: 100%;
+            margin: 20px 0;
+            background-color: #a4aeb4;
+
+            &::before{
+                content: "Ou";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(11, 31, 45, 0.62);
+                padding: 0 15px;
+                color:#a4aeb4;
+            }
+        }
+        
+        .facebook{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #205375;
+            color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+
+            &:hover{
+                background-color: #1f2224;
+                
+            }
+        }
+
+        .facebookIcon, .googleImg{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+        }
+
+
+        .facebook.google{
+            background-color: #1f2224;
+            color: white;
+            border: 1px solid #cacaca;
+
+            &:hover{
+                background-color: #000;
+
+            }
+        }
+        
+    }        
+}
